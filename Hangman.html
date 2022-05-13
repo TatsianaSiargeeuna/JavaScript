@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+<head>  
+	<meta charset="UTF-8">  
+	<title>Hangman</title> 
+</head> 
+<body>  
+	
+	<script>  
+
+	var words = [    
+	"software",    
+	"function",    
+	"computer", 
+	"development",
+	"cycle",   
+	"keyboard"  
+	];  
+	
+	 var word = words[Math.floor(Math.random() * words.length)];
+
+	 var answerArray = [];  
+	 for (var i = 0; i < word.length; i++) {    
+	 	answerArray[i] = "_";  
+	 }  
+
+	 var remainingLetters = word.length; 
+	 var timesLeft = 12;
+
+     while (remainingLetters > 0 && timesLeft > 0) {    
+      	alert(answerArray.join(" "));
+
+     var guess = prompt("Enter one letter or click Cancel to exit.");    
+     	if (guess === null) {   
+     	   break;    
+     	} else if (guess.length !== 1) {      
+     		alert("Please enter one letter.");     	
+       	} else {    
+       		timesLeft--; 
+       		guess=guess.toLowerCase();  
+     	    for (var j = 0; j < word.length; j++) {   
+     	        if (word[j] === guess && answerArray[j]==="_") {
+     	        	answerArray[j] = guess;      	              
+     	            remainingLetters--;                
+     	        } 
+     	    }    
+        }  
+
+    }
+
+    alert(answerArray.join(" "));
+
+    if (timesLeft>0){
+   		alert("Victory! The word is " + word + "."); 
+   	}else{
+   		alert("Loss! The word is " + word + ".");
+   	} 
+      	
+  
+    
+	</script> 
+</body> 
+</html>
