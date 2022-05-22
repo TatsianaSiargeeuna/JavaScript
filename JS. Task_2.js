@@ -1,12 +1,10 @@
 // 1. Преобразовать написанный код в функцию, принимающую на вход возраст. 
-//Пример: const checkAge = function(age) {Ваши преобразования} 
 //Вывести в консоль результат работы функции с возрастами 17, 18, 61
 
-//let age= водимый возраст
 let age_2=18
 let age_3=60
 
-const checkAge = function(age) { //присвоили переменной функцию
+const checkAge = function(age) { 
 if (age<age_2){
     console.log("You don't have access cause your age is "+age+". "+"It's less then "+age_2+".")
     }else if(age>=age_2 && age<age_3){
@@ -54,8 +52,8 @@ checkAge('qwerty')
 let age_2=18
 let age_3=60
 
-const checkAge = function(age) 
-{
+const checkAge = function(age) {
+    
 age=Number(age)
 if(!isNaN(age)){
 
