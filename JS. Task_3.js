@@ -122,28 +122,3 @@ const isPalindrome = function(word) {
 isPalindrome("abba")
 isPalindrome("Abba")
 isPalindrome("ab12ba")
-
-// or
-
-const isPalindrom = function(word) {
-    return word.toLowerCase() == word.toLowerCase().split("").reverse().join("")
-}
-    console.log(`${isPalindrom("Abba") ? "It is a palindrome" : "It is not a palindrome"}`)
-
-// or
-
-const isPalindromes = function(word){
-    word=word.toLowerCase()
-
-    var wordLength = word.length
-    for (var i = 0; i < wordLength / 2; i++) {
-        if (word[i] !== word [wordLength - 1 - i]){
-            return "It's not a palindrome"
-            }
-        }
-        return "It is a palindrome"
-    }
-    
-console.log(isPalindromes("abba"))
-console.log(isPalindromes("Abbba"))
-console.log(isPalindromes("ab12ba"))
