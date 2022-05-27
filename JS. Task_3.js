@@ -72,10 +72,10 @@ printSmiles(":)",6)
 const checkLetters = function(word) {
     word=word.toLowerCase()
     
-var consonants = 0
-var vowels = 0
-var lettersVowels = ["a", "e", "i", "o", "u", "y"]
-var lettersConsonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
+let consonants = 0
+let vowels = 0
+let lettersVowels = ["a", "e", "i", "o", "u", "y"]
+let lettersConsonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
 
     for (i=0; i<word.length; i++){
         for(j=0; j<lettersVowels.length; j++){
@@ -106,7 +106,7 @@ checkLetters("Check-list")
 
 const isPalindrome = function(word) {
     
-    var reverseWord = ""
+    let reverseWord = ""
     for (i = word.length - 1; i >= 0; i--){
         reverseWord += word[i];
     }
