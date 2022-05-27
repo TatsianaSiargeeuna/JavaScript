@@ -2,8 +2,8 @@
 1. Написать скриптик, который сосчитает и выведет результат от возведения 2 в степень 10, начиная со степени 1.
 */
 
-var number = 2
-var x=1
+let number = 2
+let x=1
 while (x<=10) {
     console.log(number**x)
     x++
@@ -14,8 +14,8 @@ while (x<=10) {
 2. Преобразовать 1 задачу в функцию, принимающую на вход степень, в которую будет возводиться число 2.
 */
 
-var x = 1
-var number = 2
+let x = 1
+let number = 2
 const exponentiation = function (power) {
     while (x<=power) {
     console.log(number**x)
