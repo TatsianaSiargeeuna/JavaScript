@@ -3,8 +3,8 @@
 // ["Кот - прекрасное животное", "Рыба - прекрасное животное", "Лемур - прекрасное животное", "Комодский варан - прекрасное животное"]
 
 
-var animals = ["Кот", "Рыба", "Лемур", "Комодский варан"]
-var lovely = " - прекрасное животное"
+let animals = ["Кот", "Рыба", "Лемур", "Комодский варан"]
+let lovely = " - прекрасное животное"
 
 for (i=0; i<animals.length; i++) {
     (animals[i] = animals[i]+lovely)
@@ -19,9 +19,9 @@ console.log(animals)
 // var alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
 
 
-var alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+let alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
 
-var randomString = ""
+let randomString = ""
 
 while (randomString.length<=6)
 {
@@ -37,8 +37,8 @@ console.log(randomString)
 // В противном случае просто добавляйте к результату исходный символ.
 
 
-var input = "javascript is awesome"
-var output = ""
+let input = "javascript is awesome"
+let output = ""
 
 for (i=0; i<input.length; i++) {
       if (input[i]==="a"){
