@@ -7,4 +7,3 @@
 ##### 5.    JS. Task_4a.js - method filter - task which was completed during QA course
 ##### 6.    Tasks with While and For cycles.js - completed tasks from Nick Morgan book
 ##### 7.    Hangman.html - mini game which were writed as a task from Nick Morgan book
-d
